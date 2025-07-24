@@ -57,11 +57,11 @@ The app will be running at http://localhost:5173.
 ---
 
 ### 🏗️ Architecture Decisions
-- MERN Stack: Chosen for full-stack JavaScript flexibility and ease of rapid development.
-- React Context API: Used for simple global state management of authentication tokens.
-- Tailwind CSS + Lucide Icons: Used for fast, utility-first responsive UI development.
-- JWT-based Auth: Stateless, secure user session handling without needing cookies or sessions.
-- Modular Structure: Client and server are separated cleanly for maintainability and scalability.
+- MERN Stack: We went with the classic MongoDB + Express + React + Node combo because it's all JavaScript end-to-end. That made things simpler and faster to build, especially for a small team or solo dev project.
+- React Context API for Auth: Instead of pulling in something heavy like Redux, we used Context to manage the auth token globally. It keeps the code cleaner and still gets the job done efficiently.
+- Tailwind CSS + Lucide Icons: Tailwind gave us the flexibility to style quickly without writing tons of CSS, and Lucide added clean, consistent icons that fit the modern vibe we were going for.
+- JWT for Authentication: Using JSON Web Tokens helped us avoid the need for server-side sessions. It’s stateless, secure (as long as the token is protected), and easy to manage in a single-page app.
+- Modular Structure: We kept the frontend and backend in separate folders to make the project easier to navigate, maintain, and eventually deploy. It’s also handy if we ever want to switch to mobile or build APIs separately.
 
 ---
 
